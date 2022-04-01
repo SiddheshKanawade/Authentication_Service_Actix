@@ -4,7 +4,7 @@ services:
     image: postgres:11-alpine
     restart: always
     environment:
-      POSTGRES_PASSWORD: actix
+      POSTGRES_PASSWORD: password
       POSTGRES_USER: actix
       POSTGRES_DB: actix
     ports:
