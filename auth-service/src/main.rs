@@ -1,5 +1,9 @@
+#[macro_use]
+extern crate validator_derive;
+
 mod config;
 mod handlers;
+mod models;
 
 use color_eyre::Result; //able to use ? operator
 use crate::config::Config;
