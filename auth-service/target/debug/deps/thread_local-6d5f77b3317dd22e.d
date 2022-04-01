@@ -1,0 +1,10 @@
+/Users/macbookair/Desktop/Siddhesh/Authentication Service using Actix/Authentication_Service_Actix/auth-service/target/debug/deps/thread_local-6d5f77b3317dd22e.rmeta: /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/lib.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/cached.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/thread_id.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/unreachable.rs
+
+/Users/macbookair/Desktop/Siddhesh/Authentication Service using Actix/Authentication_Service_Actix/auth-service/target/debug/deps/libthread_local-6d5f77b3317dd22e.rlib: /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/lib.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/cached.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/thread_id.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/unreachable.rs
+
+/Users/macbookair/Desktop/Siddhesh/Authentication Service using Actix/Authentication_Service_Actix/auth-service/target/debug/deps/thread_local-6d5f77b3317dd22e.d: /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/lib.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/cached.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/thread_id.rs /Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/unreachable.rs
+
+/Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/lib.rs:
+/Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/cached.rs:
+/Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/thread_id.rs:
+/Users/macbookair/.cargo/registry/src/github.com-1ecc6299db9ec823/thread_local-1.1.4/src/unreachable.rs:
