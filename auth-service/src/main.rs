@@ -17,11 +17,18 @@ async fn main() -> Result<()> {
     let config = Config::from_env()
         .expect("Server configuration");
 
+    let pool = config.db_pool().await
+        .expect("Database configuration");
+
+    //accessing the crypto_service
+    let crypto_service = config.crypto_service();
     // defining HTTP srver
     info!("Starting server at http; //{}:{}/", config.host, config.port);
     HttpServer::new(move || {
         App::new()
             .wrap(Logger::default())
+            .data(pool.clone())
+            .data(crypto_service.clone())
             .configure(app_config)
     })
     .bind(format!("{}:{}", config.host, config.port))?

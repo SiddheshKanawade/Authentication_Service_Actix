@@ -1,15 +1,23 @@
+mod crypto;
+
+use std::sync::Arc;
+use crate::config::crypto::CryptoService;
 use color_eyre::Result;
 use eyre::WrapErr;
 use serde::Deserialize;
 use dotenv::dotenv;
 use tracing::{info, instrument};
 use tracing_subscriber::EnvFilter;
+use sqlx::postgres::PgPool;
+use std::time::Duration;
 
 
 #[derive(Debug, Deserialize)]
 pub struct Config {
     pub host: String,
-    pub port: i32
+    pub port: i32,
+    pub database_url: String,
+    pub secret_key: String
 }
 
 impl Config {
@@ -34,5 +42,25 @@ impl Config {
         // converts the file into our defined struct
         c.try_into()  
             .context("Loading configuration from .env")
+    }
+
+
+    // Implementing database connection pool
+    pub async fn db_pool(&self) -> Result<PgPool> {
+        info!("Creating database connection pool");
+
+        PgPool::builder()
+            .connect_timeout(Duration::from_secs(30))
+            .build(&self.database_url)
+            .await
+            .context("Creating database connection pool")
+
+    }
+
+    // Crypto service implementation
+    pub fn crypto_service(&self) -> CryptoService {
+        CryptoService {
+            key: Arc::new(self.secret_key.clone())
+        }
     }
 }
