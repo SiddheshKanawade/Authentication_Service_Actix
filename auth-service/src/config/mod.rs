@@ -1,4 +1,4 @@
-mod crypto;
+pub mod crypto;
 
 use std::sync::Arc;
 use crate::config::crypto::CryptoService;

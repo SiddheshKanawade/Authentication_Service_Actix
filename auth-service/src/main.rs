@@ -4,6 +4,7 @@ extern crate validator_derive;
 mod config;
 mod handlers;
 mod models;
+mod db;
 
 use color_eyre::Result; //able to use ? operator
 use crate::config::Config;
